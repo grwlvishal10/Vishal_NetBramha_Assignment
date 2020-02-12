@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Netbramha Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</head>
+
+<body ng-app="netBramha" ng-controller="netBramhaCtrl">
+  <div class="row">
+    <div class="col-xl-1 col-lg-1 bg1">
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img/dashboard-20-px.png" srcset="images/img/dashboard-20-px@2x.png 2x,
+             images/img/dashboard-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img1/leads-20-px.png" srcset="images/img1/leads-20-px@2x.png 2x,
+             images/img1/leads-20-px@3x.png 3x" class="img-responsive">
+      </div>
+
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img2/channel-20-px.png" srcset="images/img2/channel-20-px@2x.png 2x,
+        images/img2/channel-20-px@3x.png 3x" class="img-responsive">
+      </div>
+
+      <hr class="Divider" />
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img3/create-20-px.png" srcset="images/img3/create-20-px@2x.png 2x,
+        images/img3/create-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img4/search-20-px.png" srcset="images/img4/search-20-px@2x.png 2x,
+        images/img4/search-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img5/mention-20-px.png" srcset="images/img5/mention-20-px@2x.png 2x,
+        images/img5/mention-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img6/tools-20-px.png" srcset="images/img6/tools-20-px@2x.png 2x,
+        images/img6/tools-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha" style="margin-top: 300px;">
+        <img src="images/img7/pinboard-20-px.png" srcset="images/img7/pinboard-20-px@2x.png 2x,
+     images/img7/pinboard-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img8/settings-20-px.png" srcset="images/img8/settings-20-px@2x.png 2x,
+     images/img8/settings-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img9/support-20-px.png" srcset="images/img9/support-20-px@2x.png 2x,
+     images/img9/support-20-px@3x.png 3x" class="img-responsive">
+      </div>
+      <div class="img-bgcircle hoverEffect-sidebar" data-toggle="tooltip" title="Netbramha">
+        <img src="images/img10/avatar.png" srcset="images/img10/avatar@2x.png 2x,
+     images/img10/avatar@3x.png 3x" class="img-responsive">
+      </div>
+    </div>
+    <div class="col-xl-11 col-lg-11 bg2">
+      <div class="row" style="margin-top: 1vw !important;">
+        <div class="col-lg-3 col-xl-3 ">
+          <p class="Sep-19">28 Sep '191</p>
+          <p class="Hul_AugSep_C"><span class="text-style-1">Leads / </span>Hul_AugSep_CPM</p>
+        </div>
+        <div class=" col-lg-9 col-xl-9">
+          <div class="row">
+            <div class="col-lg-8 col-xl-8  BG">
+              <div class="row" style="padding-top: 0.5vw;">
+                <div style="margin-right: 1vw;">
+                  <p class="text-08">08</p>
+                  <p class="new-campaign">NEW CAMPAIGN</p>
+                </div>
+                <div>
+                  <div class="progress2" style="margin-bottom: 0.5vw;">
+                    <div class="progress-bar2" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                      aria-valuemax="100" style="width:70%;">
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 1.2vw !important;">
+                    <span class="D-INR-3011CR ">D: INR 301.1CR</span>
+                    <span class="B-INR-3009CR ">B: INR 300.9CR</span>
+                    <span class="T-INR-300CR  ">T: INR 300CR</span>
+                  </div>
+                </div>
+                <div style="margin-left: 1vw;">
+                  <div class="row">
+                    <p class=" inv">INV</p>
+                    <p></p>
+                  </div>
+                  <div class="row">
+                    <p class="imp">IMP</p>
+                    <p ></p>
+                  </div>
+                </div>
+                <div style="margin-left: 1vw;">
+                  <p class="text-56">56%</p>
+                  <p class="Fill-Rate">Fill Rate</p>
+                </div>
+                <div style="margin-left: 1vw;">
+                  <p class="text-56">INR 122.1CR</p>
+                  <p class="Fill-Rate">Revenue</p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col-xl-4 row">
+              <div class="Live-view">
+                <p>Live view</p>
+              </div>
+              <div>
+                <img src="images/img11/edit-20-px.png" srcset="images/img11/edit-20-px@2x.png 2x,
+                images/img11/edit-20-px@3x.png 3x" class="Edit_20px hoverEffect1" data-toggle="tooltip" title="Edit">
+              </div>
+              <div>
+                <img src="images/img12/comment-20-px.png" srcset="images/img12/comment-20-px@2x.png 2x,
+     images/img12/comment-20-px@3x.png 3x" class="Edit_20px hoverEffect2" data-toggle="tooltip" title="comment">
+              </div>
+              <div>
+                <img src="images/img13/change-history-20-px.png" srcset="images/img13/change-history-20-px@2x.png 2x,
+     images/img13/change-history-20-px@3x.png 3x" class="Edit_20px hoverEffect2" data-toggle="tooltip" title="History">
+              </div>
+              <div>
+                <img src="images/img14/create-main-24-px.png" srcset="images/img14/create-main-24-px@2x.png 2x,
+     images/img14/create-main-24-px@3x.png 3x" class="Edit_20px hoverEffect1" data-toggle="tooltip" title="Edit">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 2vw;">
+        <div class="col-6 row">
+          <div>
+            <img src="images/img15/leads-24-px.png" srcset="images/img15/leads-24-px@2x.png 2x,
+          images/img15/leads-24-px@3x.png 3x" class="lgimg">
+          </div>
+          <div>
+            <p class="HUL_AugSep_CPM">HUL_AugSep_CPM</p>
+          </div>
+          <div>
+            <div class="Rectangle01">
+              <p class="text000876">000876</p>
+            </div>
+          </div>
+          <div>
+            <div class="Rectangle002">
+              <p class="D">D</p>
+            </div>
+          </div>
+          <div>
+            <p class="Live11">LIVE</p>
+          </div>
+        </div>
+        <div class="col-6 row">
+          <div class="cursor" onclick="generate()" data-toggle="tooltip" title="download">
+            <p class="text0008761">&nbsp;<i class="fa fa-download">&nbsp;</i>Download Report</p>
+          </div>
+          <div class="cursor" data-toggle="tooltip" title="Archive">
+            <p class="text0008761">&nbsp;<i class="fa fa-archive">&nbsp;</i>Archive</p>
+          </div>
+          <div class="cursor" data-toggle="tooltip" title="clone">
+            <p class="text0008761">&nbsp;<i class="fa fa-clone">&nbsp;</i>Duplicate</p>
+          </div>
+          <div class="cursor" data-toggle="tooltip" title="delete">
+            <p class="text0008761">&nbsp;<i class="fa fa-trash">&nbsp;</i>Delete</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <p class="text0008761">Hindustan Unilever Limited - Lux</p>
+        </div>
+          <div class="Rectangle011">
+            <p class="text000876">Government</p>
+          </div>
+          <div class="Rectangle011">
+            <p class="text000876">Flipkart</p>
+          </div>
+          <div class="Rectangle011">
+            <p class="text000876">Barc</p>
+          </div>
+        <div>
+          <p class="text000876" style="color: #228cff;margin-left: 10px;">+ 5 More</p>
+        </div>
+      </div>
+      <!--------->
+      <div class="row">
+        <div class="col-xl-7">
+          <div class="row">
+            <div class="col  BG---Gradient Rectangle0011" style="border-top-left-radius: 1vw;">
+              <span class="Sep-19">20 Aug ‘19 - 02 Sep’19</span><br>
+              <span class="text00087611">Start-End</span>
+            </div>
+            <div class="col  BG---Gradient  Rectangle0012">
+              <span class="Sep-19">INR 50CR</span><br>
+              <span class="text00087611">Booked Value</span>
+            </div>
+            <div class="col  BG---Gradient Rectangle0012">
+              <span class="Sep-19">Glitch</span><br>
+              <span class="text00087611">Agency</span>
+            </div>
+            <div class="col  BG---Gradient Rectangle0011" style="border-top-right-radius: 1vw;">
+              <span class="Sep-19">Hindustan Unilever Ltd</span><br>
+              <span class="text00087611">Advertiser</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col  BG---Gradient Rectangle0012">
+              <span class="Sep-19">Rajesh Sridhar</span><br>
+              <span class="text00087611">Sales Person</span>
+            </div>
+            <div class="col BG---Gradient Rectangle0011">
+              <span class="Sep-19">Saravana, Sudindra, +2</span><br>
+              <span class="text00087611">Approvers</span>
+            </div>
+            <div class="col  BG---Gradient Rectangle0012">
+              <span class="Sep-19">Hari Hara Subramaniam</span><br>
+              <span class="text00087611">Assignee</span>
+            </div>
+            <div class="col  BG---Gradient Rectangle0011">
+              <span class="Sep-19">Pears</span><br>
+              <span class="text00087611">Brand</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col  BG---Gradient Rectangle0012" style="border-bottom-left-radius: 1vw;">
+              <span class="Sep-19">Keshab</span><br>
+              <span class="text00087611">Shadow sales person</span>
+            </div>
+            <div class="col BG---Gradient Rectangle0011">
+              <span class="Sep-19">Aryan Singh </span><br>
+              <span class="text00087611">Sales Manager</span>
+            </div>
+            <div class="col  BG---Gradient Rectangle0012">
+              <span class="Sep-19">INR 38CR</span><br>
+              <span class="text00087611">Delivered Revenue</span>
+            </div>
+            <div class="col BG---Gradient Rectangle0011" style="border-bottom-right-radius: 1vw;">
+              <span class="Sep-19" style="color: #228cff;">View More ››</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 BG---Gradient1">
+          <div class="row">
+            <div class="Sep-19" style="margin-top: 20px;">Campaign Delivery Status
+            </div>
+              <div
+                style="background-color: black;border-radius: 2vw;padding: 10px 2vw;margin-left: 1vw;
+                margin-top: 5px;">
+                <div>
+                <span class="On-Track-05">On Track (05)</span>
+                <span class="On-Track-05" style="margin: 0vw 1vw;">Over Performing (02)</span>
+                <span class="On-Track-05">At Risk (01)</span>
+                </div>
+              </div>
+          </div>
+          <hr style="border-top: 1px solid black;margin-top: 10px;margin-bottom: 5px;">
+          <div class="row" style="margin-top: 0.5vw !important;">
+            <div class="col Rectangle001 Rectangle0011 ">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+            <div class="col Rectangle001 Rectangle0011">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+            <div class="col Rectangle001 Rectangle0012">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+            <div class="col Rectangle001 Rectangle0012">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 0.5vw !important;">
+            <div class="col Rectangle001 Rectangle0012">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+            <div class="col Rectangle001 Rectangle0011">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+            <div class="col Rectangle001 Rectangle0012">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+            <div class="col Rectangle001 Rectangle0011">
+              <span class="Sep-19-01">65%</span><br>
+              <span class="text00087611-01">HUL_30sec_South</span>
+            </div>
+          </div>
+          <hr style="border-top: 1px solid black;margin-top: 0.6vw;margin-bottom: 0.6vw;">
+          <div class="row">
+            <div class="col-3">
+              <p class="text00087611-01" style="color: #37defc;font-size: 1vw;">D: INR 1.1CR</p>
+            </div>
+            <div class="col-6">
+              <div class="progress1" style="margin-top: 0.5vw;">
+                <div class="progress-bar1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  style="width:70%;">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <p class="text00087611-01" style="color: #bdbec4;font-size: 1vw;">B: INR 5.9CR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------>
+      <div class="row">
+        <div class="col-xl-8">
+          <p class="Sep-19" style="font-size: 1.5vw;margin-top: 1vw;">Line Item Queue (07)</p>
+        </div>
+        <div class="col-xl-4">
+          <p style="margin-top: 1vw;color: #8990ad;font-size: 0.9vw;float: right;"><i class="fa fa-square-o"></i>&nbsp;
+            Approved (04)<span>&nbsp;&nbsp;&nbsp;<i class="fa fa-square-o"></i>&nbsp;Pending Approval (03)</span></p>
+        </div>
+      </div>
+      <!-------->
+      <div class="row">
+        <div>
+          <div class="Rectangle101 Rectangle0011">
+            <img src="images/img16/approve-16-px.png" srcset="images/img16/approve-16-px@2x.png 2x,
+                      images/img16/approve-16-px@3x.png 3x" style="width: 1vw;height: 1vw;">
+            <span class="Sep-19">HUL_South_Aug-Sep1</span>
+            <p class="text00087611" style="margin-left: 1vw;">123457</p>
+          </div>
+        </div>
+        <div>
+          <div class="Rectangle101 Rectangle0012">
+            <img src="images/img16/approve-16-px.png" srcset="images/img16/approve-16-px@2x.png 2x,
+                      images/img16/approve-16-px@3x.png 3x" style="width: 1vw;height: 1vw;">
+            <span class="Sep-19">HUL_South_Aug-Sep1</span>
+            <p class="text00087611" style="margin-left: 1vw;">123457</p>
+          </div>
+        </div>
+        <div>
+          <div class="Rectangle101 Rectangle0012">
+            <img src="images/img16/approve-16-px.png" srcset="images/img16/approve-16-px@2x.png 2x,
+                      images/img16/approve-16-px@3x.png 3x" style="width: 1vw;height: 1vw;">
+            <span class="Sep-19">HUL_South_Aug-Sep1</span>
+            <p class="text00087611" style="margin-left: 1vw;">123457</p>
+          </div>
+        </div>
+        <div>
+          <div class="Rectangle101 Rectangle0011">
+            <img src="images/img16/approve-16-px.png" srcset="images/img16/approve-16-px@2x.png 2x,
+                      images/img16/approve-16-px@3x.png 3x" style="width: 1vw;height: 1vw;">
+            <span class="Sep-19">HUL_South_Aug-Sep1</span>
+            <p class="text00087611" style="margin-left: 1vw;">123457</p>
+          </div>
+        </div>
+        <div>
+          <div class="Rectangle101 Rectangle0012">
+            <img src="images/img16/approve-16-px.png" srcset="images/img16/approve-16-px@2x.png 2x,
+                      images/img16/approve-16-px@3x.png 3x" style="width: 1vw;height: 1vw;">
+            <span class="Sep-19">HUL_South_Aug-Sep1</span>
+            <p class="text00087611" style="margin-left: 1vw;">123457</p>
+          </div>
+        </div>
+        <div>
+          <div class="Rectangle101 Rectangle0012">
+            <img src="images/img16/approve-16-px.png" srcset="images/img16/approve-16-px@2x.png 2x,
+                      images/img16/approve-16-px@3x.png 3x" style="width: 1vw;height: 1vw;">
+            <span class="Sep-19">HUL_South_Aug-Sep1</span>
+            <p class="text00087611" style="margin-left: 1vw;">123457</p>
+          </div>
+        </div>
+      </div>
+      <!----->
+      <div class="row" style="margin-top: 15px !important;">
+          <div>
+            <p class="Sep-19-011" style="color: #838baa;margin-left: 2.8vw;">Line Items (23)</p>
+          </div>
+          <div>
+            <p class="Sep-19-011" style="color: #228cff;">Goals (26)</p>
+          </div>
+          <div>
+            <p class="Sep-19-011" style="color: #838baa;">Creatives (04)</p>
+          </div>
+          <div>
+            <p class="Sep-19-011" style="color: #838baa;">Documents (04)</p>
+          </div>
+          <div>
+            <p class="Sep-19-011" style="color: #838baa;">Groups (06)</p>
+          </div>
+          <div style="margin-top: 15px;margin-left: 7vw;font-size: 1vw;color: #8990ad;">
+            <i data-toggle="tooltip" title="edit" onclick="alert('You can Edit now')" class="fa fa-pencil cursor" aria-hidden="true"></i>
+            <i data-toggle="tooltip" title="filter" class="fa fa-filter cursor" style="margin-left: 1.5vw;cursor: pointer;"></i>
+            <i data-toggle="tooltip" title="download" class="fa fa-download" aria-hidden="true" style="margin-left: 1.5vw;cursor: pointer;"></i>
+            <i data-toggle="tooltip" title="book" class="fa fa-book" aria-hidden="true" style="margin-left: 1.5vw;cursor: pointer;"></i>
+            <i data-toggle="tooltip" title="search" class="fa fa-search cursor" id="img21" onclick="largeSearch()" style="margin-left: 1.5vw;cursor: pointer;"></i>
+          </div>
+          <div><input id="img211" type="text" placeholder="" name="search"
+              style="padding-left: 0.5vw;font-size: 0.8vw;margin-left: 2vw;margin-top: 1vw;width: 10vw;
+              height: 1vw;border: 1px solid #37defc;border-radius: 5px;display: none;" />
+          </div>
+      </div>
+    <div style="background-color: white;position: relative;width: 100%;margin-top: 60px;" >
+      <!---->
+      <div class="row" style="position: absolute;width: 98%;top: -75px;">
+        <div style="height: 40vw;" class="col-9">
+          <div
+            style="border-radius: 5px;background-color: #dadce6;width: 98%;margin: auto;border: 1px solid #dadce6;">
+            <div class="row">
+              <div class="col">
+                <input type="checkbox">&nbsp;
+                <span class="id">ID</span>
+              </div>
+              <div class="col">
+                <span class="id">GOAL NAME</span>
+              </div>
+              <div class="col">
+                <span class="id">R(INR)/Q </span>
+              </div>
+              <div class="col">
+                <span class="id">BILLING BY</span>
+              </div>
+              <div class="col">
+                <span class="id">START DATE</span>
+              </div>
+              <div class="col">
+                <span class="id">END DATE</span>
+              </div>
+              <div class="col">
+                <span class="id" style="font-size: 0.5vw;">DELIVERY STATUS</span>
+              </div>
+              <div class="col">
+                <span class="id">METADATA</span>
+              </div>
+            </div>
+            <div class="row" ng-repeat="x in result" style="background-color: #ffffff;padding-top: 1vw;">
+              <div class="col">
+                <input type="checkbox" style="margin-top: 0.5vw;">&nbsp;
+                <span class="id">{{x.id}}</span>
+              </div>
+              <div class="col">
+                <span class="id">{{x.Goal_Name}}</span><br>
+                <span class="id">{{x.Goal_Name1}}</span>
+              </div>
+              <div class="col">
+                <span class="id">{{x.R_INR}}</span>
+              </div>
+              <div class="col">
+                <span class="id">{{x.Billing_By}}</span>
+              </div>
+              <div class="col">
+                <span class="id">{{x.START_date}}</span>
+                <span class="id">{{x.START_date1}}</span>
+              </div>
+              <div class="col">
+                <span class="id">{{x.END_date}}</span>
+                <span class="id">{{x.END_date1}}</span>
+              </div>
+              <div class="col">
+                <div class="progress1" style="margin-top: 1vw;">
+                  <div class="progress-bar1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                    style="width:70%;">
+                  </div>
+                </div>
+                <span class="id" style="float: left;font-size: 0.7vw;margin-top: 1vw;">30CR</span><span class="id"
+                  style="float: right;font-size: 0.7vw;margin-top: 1vw;">100CR</span>
+              </div>
+              <div class="col">
+                <img src="images/img17/targeting-16-px.png" srcset="images/img17/targeting-16-px@2x.png 2x,
+                  images/img17/targeting-16-px@3x.png 3x">
+                <img src="images/img18/creative-16-px.png" srcset="images/img18/creative-16-px@2x.png 2x,
+                           images/img18/creative-16-px@3x.png 3x">
+                <img src="images/img19/campaign-16-px.png" srcset="images/img19/campaign-16-px@2x.png 2x,
+                            images/img19/campaign-16-px@3x.png 3x">
+                <img src="images/img20/change-history-16-px.png" srcset="images/img20/change-history-16-px@2x.png 2x,
+                          images/img20/change-history-16-px@3x.png 3x">
+              </div>
+            </div>
+          </div>
+        </div>
+       <div style="height: 40vw;" class="col-3">
+          <div
+            style="border-radius: 5px;background-color: white;width: 98%;margin: auto;border: 1px solid #dadce6;margin-top: 0.3vw;">
+            <div class="row" style="margin-top: 1vw !important;">
+              <div class="col-8">
+                <span class="Campaigns-16-Copy-2">Campaigns (16)</span>
+              </div>
+              <div class="col-4">
+                <img src="images/img21/filter-20-px.png" data-toggle="tooltip" title="filter"
+                  srcset="images/img21/filter-20-px@2x.png 2x,images/img21/filter-20-px@3x.png 3x">
+                &nbsp;&nbsp;&nbsp;<img src="images/img22/search-20-px.png" data-toggle="tooltip" title="search"
+                  srcset="images/img22/search-20-px@2x.png 2x, images/img22/search-20-px@3x.png 3x">
+              </div>
+            </div>
+            <div style="width: 100%;">
+              <div style="width: 95%;margin: auto;">
+                <div class="row bgChange1"
+                  style="border:1px solid #e9e9eb;margin-top: 1vw !important;padding-top: 1vw;padding-bottom: 1vw;">
+                  <div class="col-8">
+                    <span class="Nissan_micra_SepCPM-Copy-6">Nissan_micra_Sep…</span><br>
+                    <span class="copy-6">123445</span>
+                  </div>
+                  <div class="col-4">
+                    <span
+                      style=" cursor: pointer;font-size: 0.7vw;padding: 0.5vw 1vw;background-color: #e4e7ff;color: #051bc8;border-radius: 10px;">Paused</span>
+                  </div>
+                </div>
+                <div class="row bgChange2"
+                  style="border:1px solid #e9e9eb;margin-top: 1vw !important;padding-top: 1vw;padding-bottom: 1vw;">
+                  <div class="col-8">
+                    <span class="Nissan_micra_SepCPM-Copy-6">Nissan_micra_Sep…</span><br>
+                    <span class="copy-6">123445</span>
+                  </div>
+                  <div class="col-4">
+                    <span
+                      style=" cursor: pointer;font-size: 0.7vw;padding: 0.5vw 1vw;background-color: #ddfaed;color: #00a359;border-radius: 10px;">Paused</span>
+                  </div>
+                </div>
+                <div class="row bgChange1"
+                  style="border:1px solid #e9e9eb;margin-top: 1vw !important;padding-top: 1vw;padding-bottom: 1vw;">
+                  <div class="col-8">
+                    <span class="Nissan_micra_SepCPM-Copy-6">Nissan_micra_Sep…</span><br>
+                    <span class="copy-6">123445</span>
+                  </div>
+                  <div class="col-4">
+                    <span
+                      style=" cursor: pointer;font-size: 0.7vw;padding: 0.5vw 1vw;background-color: #eeeff5;color: #636681;border-radius: 10px;">Complete</span>
+                  </div>
+                </div>
+                <div class="row bgChange2"
+                  style="border:1px solid #e9e9eb;margin-top: 1vw !important;padding-top: 1vw;padding-bottom: 1vw;">
+                  <div class="col-8">
+                    <span class="Nissan_micra_SepCPM-Copy-6">Nissan_micra_Sep…</span><br>
+                    <span class="copy-6">123445</span>
+                  </div>
+                  <div class="col-4">
+                    <span
+                      style=" cursor: pointer;font-size: 0.7vw;padding: 0.5vw 1vw;background-color: #e4e7ff;color: #051bc8;border-radius: 10px;">Paused</span>
+                  </div>
+                </div>
+                <div class="row bgChange1"
+                  style="border:1px solid #e9e9eb;margin-top: 1vw !important;padding-top: 1vw;padding-bottom: 1vw;">
+                  <div class="col-8">
+                    <span class="Nissan_micra_SepCPM-Copy-6">Nissan_micra_Sep…</span><br>
+                    <span class="copy-6">123445</span>
+                  </div>
+                  <div class="col-4">
+                    <span
+                      style=" cursor: pointer;font-size: 0.7vw;padding: 0.5vw 1vw;background-color: #ddfaed;color: #00a359;border-radius: 10px;">Paused</span>
+                  </div>
+                </div>
+                <div class="row bgChange2"
+                  style="border:1px solid #e9e9eb;margin-top: 1vw !important;padding-top: 1vw;padding-bottom: 1vw;">
+                  <div class="col-8">
+                    <span class="Nissan_micra_SepCPM-Copy-6">Nissan_micra_Sep…</span><br>
+                    <span class="copy-6">123445</span>
+                  </div>
+                  <div class="col-4">
+                    <span
+                      style=" cursor: pointer;font-size: 0.7vw;padding: 0.5vw 1vw;background-color: #ddfaed;color: #00a359;border-radius: 10px;">Paused</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- <div style="color: red;position: absolute;bottom: -1vw;left: 2vw;">
+          <h3>Vishal_Agarwal_NetBramha_Assignment</h3>
+        </div> -->
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</body>
+</html>
